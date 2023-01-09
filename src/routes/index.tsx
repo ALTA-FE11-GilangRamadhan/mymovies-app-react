@@ -1,9 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Component } from "react";
 
 import Homepage from "../pages";
 import DetailMovie from "../pages/DetailMovie";
 import Favorite from "../pages/Favorite";
+import Sandbox from "../pages/Sandbox";
 
 const router = createBrowserRouter([
   {
@@ -18,12 +18,14 @@ const router = createBrowserRouter([
     path: "/favorites",
     element: <Favorite />,
   },
+  {
+    path: "/sandbox",
+    element: <Sandbox />,
+  },
 ]);
 
-class App extends Component {
-  render() {
-    return <RouterProvider router={router} />;
-  }
-}
+const App = () => {
+  return <RouterProvider router={router} />;
+};
 
 export default App;

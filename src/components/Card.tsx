@@ -20,7 +20,7 @@ const Card: FC<CardProps> = ({ id, image, title, labelButton, onClickFav }) => {
   }
 
   return (
-    <div className="card card-compact bg-base-100 shadow-xl">
+    <div className="card card-compact bg-base-100 shadow-xl dark:bg-gray-500">
       <figure onClick={() => onClickDetail()}>
         <img className="mx-auto" src={`https://image.tmdb.org/t/p/w500${image}`} alt={title} />
       </figure>
